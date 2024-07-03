@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <span class="main">Calculator</span><br>
+            <div class="subheading">-using HTML, CSS, Javascript.</div>
+        </div>
+
+        <div class="calculator">
+            <div class="top">Calculator</div>
+            <form>
+                <div class="display">
+                    <input type="text" name="display" disabled>
+                </div>
+                
+                <div class="buttons">
+                    <input type="button" name="" id="" value="AC" onclick="display.value = ''" class="operator button">
+                    <input type="button" name="" id="" value="Del" onclick="display.value = display.value.toString().slice(0,-1)" class="operator button">
+                    <input type="button" name="" id="" value="." onclick="display.value += '.'" class="operator button">
+                    <input type="button" name="" id="" value="/" onclick="display.value += '/'" class="operator button">
+                </div>
+
+                <div>
+                    <input type="button" name="" id="" value="7" onclick="display.value += '7'" class="button" >
+                    <input type="button" name="" id="" value="8" onclick="display.value += '8'" class="button">
+                    <input type="button" name="" id="" value="9" onclick="display.value += '9'" class="button">
+                    <input type="button" name="" id="" value="*" onclick="display.value += '*'" class="operator button">
+                </div>
+
+                <div>
+                    <input type="button" name="" id="" value="4" onclick="display.value += '4'" class="button">
+                    <input type="button" name="" id="" value="5" onclick="display.value += '5'" class="button">
+                    <input type="button" name="" id="" value="6" onclick="display.value += '6'" class="button">
+                    <input type="button" name="" id="" value="-" onclick="display.value += '-'" class="operator button">
+                </div>
+
+                <div>
+                    <input type="button" name="" id="" value="1" onclick="display.value += '1'" class="button">
+                    <input type="button" name="" id="" value="2" onclick="display.value += '2'" class="button">
+                    <input type="button" name="" id="" value="3" onclick="display.value += '3'" class="button">
+                    <input type="button" name="" id="" value="+" onclick="display.value += '+'" class="operator button">
+                </div>
+
+                <div>
+                    <input type="button" name="" id="" value="00" onclick="display.value += '00'" class="button">
+                    <input type="button" name="" id="" value="0" onclick="display.value += '0'"   class="button">
+                    <input type="button" name="" id="" value="=" onclick="display.value= eval(display.value)" class="equal operator button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
